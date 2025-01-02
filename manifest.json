@@ -1,0 +1,23 @@
+{
+      "manifest_version": 3,
+      "name": "Gmail Gemini Search",
+      "version": "1.0",
+      "description": "Advanced Gmail search using Gemini.",
+      "permissions": [
+        "identity",
+        "https://mail.google.com/",
+        "storage"
+      ],
+      "oauth2": {
+        "client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
+        "scopes": [
+          "https://mail.google.com/"
+        ]
+      },
+      "action": {
+        "default_popup": "popup.html"
+      },
+      "background": {
+        "service_worker": "background.js"
+      }
+    }
